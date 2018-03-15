@@ -9,7 +9,7 @@ class FlashCard extends React.Component {
         let flipOver = this.props.selected.includes(this.props.id);
         let children;
         if(flipOver) {
-            children = this.props.children ? this.props.children : <RotatedHeader>back of card {this.props.id}</RotatedHeader>
+            children = this.props.children ? this.props.children : <RotatedHeader>Back of card {this.props.id}</RotatedHeader>
         } else {
             children = <Header>Front of card {this.props.id}</Header>
         }
